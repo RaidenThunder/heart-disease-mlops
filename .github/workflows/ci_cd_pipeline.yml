@@ -26,8 +26,8 @@ jobs:
     - name: Generate Data
       run: |
         mkdir data
+        mkdir models
         python src/data_loader.py
-
     - name: Train Model
       run: python src/train.py
 
