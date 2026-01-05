@@ -20,7 +20,7 @@ jobs:
         pip install pytest
 
     - [cite_start]name: Run Tests [cite: 33]
-      run: pytest tests/
+      run: python -m pytest tests/
 
     - name: Train Model
       run: python src/train.py
