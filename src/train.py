@@ -23,7 +23,7 @@ def train_model():
     mlflow.set_tracking_uri("file:./mlruns") 
     
     # Set up Experiment
-    mlflow.set_experiment("Heart_Disease_Prediction")
+    mlflow.set_experiment("Heart_Disease_Prediction_v2")
 
     # Define models to train
     models = {
