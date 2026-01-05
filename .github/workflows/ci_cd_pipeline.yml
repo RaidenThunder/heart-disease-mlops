@@ -22,6 +22,12 @@ jobs:
     - name: Run Tests
       run: python -m pytest tests/
 
+    # NEW STEP: Create folder and download data
+    - name: Generate Data
+      run: |
+        mkdir data
+        python src/data_loader.py
+
     - name: Train Model
       run: python src/train.py
 
